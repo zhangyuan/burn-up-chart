@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @story.number %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @story.title %>
+</p>
+
+<p>
+  <strong>Planned on:</strong>
+  <%= @story.planned_on %>
+</p>
+
+<p>
+  <strong>Estimated points:</strong>
+  <%= @story.estimated_points %>
+</p>
+
+<p>
+  <strong>Real points:</strong>
+  <%= @story.real_points %>
+</p>
+
+<p>
+  <strong>Dev done on:</strong>
+  <%= @story.dev_done_on %>
+</p>
+
+<%= link_to 'Edit', edit_story_path(@story) %> |
+<%= link_to 'Back', stories_path %>
